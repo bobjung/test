@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="utf-8" />
+  <!-- <meta name='viewport' content='width=device-width'>-->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.1/pixi.min.js"></script> -->
+
+  <!-- favicon.ico 404 Not found 에러 날 때 삽입 코드, 동영상을 불러와서 새로고침 시 호출 됨-->
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+  <!-- webFontLoader webfont가 load가 완료가 안 될 경우, 디폴트 font을 보여주기 떄문에 사용-->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+
+  <link href="https://vjs.zencdn.net/7.8.2/video-js.css" rel="stylesheet" />
+
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ['Roboto:300,400,500,700']
+      }
+    });
+    window.HELP_IMPROVE_VIDEOJS = false;
+  </script>
+
+  <title>bo-app</title>
+</head>
+
+<body>
+  <!-- <video id="my-video" class="video-js" controls preload="auto" width="800" height="400" data-setup="{}">
+    <source src="videos/test.mp4" type="video/mp4" />
+
+  </video> -->
+
+  <script src="https://vjs.zencdn.net/7.8.2/video.js"></script>
+  <!-- <h1>rollup-starter-app</h1>
+  <p>The time is <span id='time-now'>...</span></p> -->
+  <div class="stage" id="stage"></div>
+  <!-- <canvas id="canvas"></canvas> -->
+  <script src="bundle.js"></script>
+</body>
+
+</html>
